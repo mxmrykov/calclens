@@ -1,38 +1,88 @@
+:root {
+  /* Light theme */
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --header-bg: #f8f9fa;
+  --input-bg: #ffffff;
+  --button-bg: #f8f9fa;
+  --border-color: #e0e0e0;
+  --hover-bg: #f0f0f0;
+  --primary-color: #4ae54a;
+}
+
+[data-theme="dark"] {
+  /* Dark theme */
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --header-bg: #1a1a1a;
+  --input-bg: #2a2a2a;
+  --button-bg: #2a2a2a;
+  --border-color: #333333;
+  --hover-bg: #2a2a2a;
+  --primary-color: #4ae54a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  background-image: 
+    radial-gradient(circle at center, transparent 0%, rgba(74, 229, 74, 0.15) 40%, rgba(74, 229, 74, 0.3) 70%, rgba(74, 229, 74, 0.5) 100%);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: var(--text-color);
+  font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body {
+  background-image: 
+    linear-gradient(135deg, rgba(74, 229, 74, 0.05) 0%, transparent 50%),
+    linear-gradient(225deg, rgba(74, 229, 74, 0.05) 50%, transparent 100%),
+    linear-gradient(45deg, rgba(74, 229, 74, 0.03) 0%, transparent 30%);
+  background-size: 100% 100%, 100% 100%, 100% 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sansation', 'Jost', sans-serif;
+  font-weight: 700;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  flex: 1;
+  padding-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
 }
