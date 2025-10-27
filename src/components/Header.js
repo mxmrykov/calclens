@@ -17,26 +17,6 @@ const Header = () => {
           <img src={logo} alt="calclens" className="logo" />
         </Link>
         
-        <nav className="nav">
-          <Link 
-            to="/compound-interest" 
-            className={location.pathname === '/compound-interest' ? 'nav-link active' : 'nav-link'}
-          >
-            {t('compoundInterest')}
-          </Link>
-          <Link 
-            to="/age-calculator" 
-            className={location.pathname === '/age-calculator' ? 'nav-link active' : 'nav-link'}
-          >
-            {t('ageCalculator')}
-          </Link>
-          <Link 
-            to="/days-counter" 
-            className={location.pathname === '/days-counter' ? 'nav-link active' : 'nav-link'}
-          >
-            {t('daysCounter')}
-          </Link>
-        </nav>
 
         <div className="header-controls">
           <button onClick={toggleLocale} className="control-btn" title={t('language')}>

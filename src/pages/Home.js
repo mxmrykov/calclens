@@ -9,14 +9,12 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="home-content">
-        <h1>calclens</h1>
-        
         <div className="calculator-grid">
           <Link to="/compound-interest" className="calculator-card-link">
             <div className="card">
               <div className="card-icon">💰</div>
               <h3>{t('compoundInterest')}</h3>
-              <p>Calculate compound interest and see how your money grows over time with recurring investments</p>
+              <p>{t('CompoundInterestDescription')}</p>
             </div>
           </Link>
 
@@ -24,7 +22,7 @@ const Home = () => {
             <div className="card">
               <div className="card-icon">🎂</div>
               <h3>{t('ageCalculator')}</h3>
-              <p>Find out your exact age in years, months, and days</p>
+              <p>{t('AgeCalculatorDescription')}</p>
             </div>
           </Link>
 
@@ -32,7 +30,7 @@ const Home = () => {
             <div className="card">
               <div className="card-icon">⏰</div>
               <h3>{t('daysCounter')}</h3>
-              <p>Count the days until or since any important date</p>
+              <p>{t('DaysCounterDescription')}</p>
             </div>
           </Link>
         </div>

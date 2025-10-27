@@ -5,7 +5,10 @@ const LocaleContext = createContext();
 const translations = {
   en: {
     compoundInterest: 'Compound Interest Calculator',
+    CompoundInterestDescription: 'Calculate the future value of an investment with compound interest',
     ageCalculator: 'Age Calculator',
+    AgeCalculatorDescription: 'Find out your exact age in years, months, and days',
+    DaysCounterDescription: 'Count the days until or since any important date',
     daysCounter: 'Days Counter',
     amount: 'Initial Amount',
     rate: 'Interest Rate (%)',
@@ -31,6 +34,9 @@ const translations = {
   },
   ru: {
     compoundInterest: 'Калькулятор сложных процентов',
+    CompoundInterestDescription: 'Рассчитайте будущую стоимость инвестиции с учетом сложных процентов',
+    AgeCalculatorDescription: 'Узнайте свой точный возраст в годах, месяцах и днях',
+    DaysCounterDescription: 'Подсчитайте дни до или с момента любой важной даты',
     ageCalculator: 'Калькулятор возраста',
     daysCounter: 'Счетчик дней',
     amount: 'Начальная сумма',

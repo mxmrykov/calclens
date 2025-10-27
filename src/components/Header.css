@@ -4,7 +4,8 @@
   position: sticky;
   top: 1rem;
   z-index: 100;
-  max-width: 1400px;
+  width: 600px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -37,12 +38,12 @@
 }
 
 .header-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
   position: relative;
   z-index: 1;
 }
@@ -58,50 +59,6 @@
   width: auto;
 }
 
-.nav {
-  display: flex;
-  gap: 1.5rem;
-  flex: 1;
-  justify-content: center;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-link::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--primary-color), rgba(74, 229, 74, 0.5));
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::before {
-  width: 100%;
-}
-
-.nav-link:hover {
-  background: var(--hover-bg);
-  color: var(--primary-color);
-}
-
-.nav-link.active {
-  background: linear-gradient(135deg, var(--primary-color), rgba(74, 229, 74, 0.8));
-  color: white;
-  box-shadow: 0 4px 12px rgba(74, 229, 74, 0.3);
-  transform: translateY(-2px);
-}
 
 .header-controls {
   display: flex;
@@ -117,6 +74,9 @@
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
+  font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -146,27 +106,49 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: 1rem 1rem;
+    padding: 0.75rem 1rem;
     top: 0.5rem;
   }
   
   .header-container {
-    flex-wrap: wrap;
+    gap: 0.5rem;
   }
   
   .header::before {
     border-radius: 16px;
   }
   
-  .nav {
-    order: 3;
-    width: 100%;
-    gap: 0.5rem;
+  .logo {
+    height: 50px;
   }
   
-  .nav-link {
+  .header-controls {
+    gap: 0.25rem;
+  }
+  
+  .control-btn {
+    padding: 0.4rem 0.8rem;
     font-size: 0.875rem;
-    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem 0.75rem;
+    top: 0.25rem;
+  }
+  
+  .header-container {
+    gap: 0.25rem;
+  }
+  
+  .logo {
+    height: 45px;
+  }
+  
+  .control-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
   }
 }
 

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LocaleProvider } from './contexts/LocaleContext';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import CompoundInterest from './pages/CompoundInterest';
 import AgeCalculator from './pages/AgeCalculator';
@@ -25,6 +26,7 @@ function App() {
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </main>
+            <Footer />
           </div>
         </Router>
       </LocaleProvider>
