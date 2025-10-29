@@ -34,6 +34,8 @@ const DaysCounter = () => {
   return (
     <div className="calculator-container">
       <div className="calculator-card">
+        <div id="yandex_rtb_R-A-17602391-1" style={{maxWidth: "100%", border: "2px solid green", borderRadius: 10, padding: 7}}></div>
+        <hr className="section-divider" />
         <h1>{t('daysCounter')}</h1>
         
         <div className="calculator-form">

@@ -34,6 +34,26 @@ const Home = () => {
             </div>
           </Link>
         </div>
+
+        <hr className="section-divider" />
+
+        <div className="calculator-grid">
+          <Link to="/flag-guess" className="calculator-card-link">
+            <div className="card">
+              <div className="card-icon">🚩</div>
+              <h3>{t('flagGuess')}</h3>
+              <p>{t('FlagGuessDescription')}</p>
+            </div>
+          </Link>
+
+          <Link to="/capital-guess" className="calculator-card-link">
+            <div className="card">
+              <div className="card-icon">🏛️</div>
+              <h3>{t('capitalGuess')}</h3>
+              <p>{t('CapitalGuessDescription')}</p>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

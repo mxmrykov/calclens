@@ -113,3 +113,13 @@
   }
 }
 
+.section-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #4ae54a, #22c55e, #4ae54a, transparent);
+  margin: 3rem 0;
+  opacity: 0.8;
+  border-radius: 1px;
+  box-shadow: 0 2px 8px rgba(74, 229, 74, 0.2);
+}
+

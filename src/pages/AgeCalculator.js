@@ -39,7 +39,8 @@ const AgeCalculator = () => {
     <div className="calculator-container">
       <div className="calculator-card">
         <h1>{t('ageCalculator')}</h1>
-        
+         <div id="yandex_rtb_R-A-17602391-1" style={{maxWidth: "100%", border: "2px solid green", borderRadius: 10, padding: 7}}></div>
+        <hr className="section-divider" />
         <form onSubmit={calculate} className="calculator-form">
           <div className="form-group">
             <label>{t('birthDate')}</label>

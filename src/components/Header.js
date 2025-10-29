@@ -16,7 +16,6 @@ const Header = () => {
         <Link to="/" className="logo-link">
           <img src={logo} alt="calclens" className="logo" />
         </Link>
-        
 
         <div className="header-controls">
           <button onClick={toggleLocale} className="control-btn" title={t('language')}>
